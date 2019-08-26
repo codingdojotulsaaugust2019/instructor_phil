@@ -1,0 +1,39 @@
+1.) Open Terminal
+
+
+2.) Navigate to your Desktop
+	cd ~/Desktop
+
+3.) Create a new directory, call it 'test'
+ 	mkdir test
+
+4.) Make files called index.html, styles.css, commands.txt inside the test directory
+	cd test
+	touch index.html styles.css commands2.txt
+
+5.) Make a copy of index.html and call it index_2.html
+ 	cp index.html index_2.html
+
+6.) Navigate back to your desktop and make another directory, call it 'destination'
+	cd ..
+	mkdir destination
+
+7.) Move the index_2.html file to the 'destination' directory
+	mv ./test/index_2.html ./destination/
+
+8.) In the 'test' directory, remove the 'styles.css' file
+	rm styles.css
+
+9.) Now, check and see what files are in the 'test' and 'destination' directories
+	cd ..
+	ls ./test
+	ls ./destination
+
+10.) Remove/delete the 'destination' directory
+	rm -rf destination/
+
+11.) Spend 10 minutes researching some other terminal commands and keep them in mind for the future!
+
+  	pwd: current working directory
+	rmdir: remove an empty directory
+	rename file: mv commands2.txt fileWasChanged.txt #file change  was first, new name of 		file is second
