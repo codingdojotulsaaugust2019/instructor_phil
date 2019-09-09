@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body class="bg-dark">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-4 offset-4 text-center">
+                <h1>Rock Paper Scissors</h1>
+                <form method='post' action='/process'>
+                    <div class="form-group">
+                      <label for="user_input">Pick Rock Paper or Scissors</label>
+                      <select class="form-control" name="user_input" id="user_input">
+                          <option value="rock">Rock</option>
+                          <option value="paper">Paper</option>
+                          <option value="scissors">Scissors</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn-primary">Send Guess</button>
+                    </div>
+                  </form>
+                  <form action="/play_again" method="post">
+                    <button class="btn btn-warning">Start Over</button>
+                </form>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-4 offset-4 text-center">
+                    <ul>
+                        <li>Client won: {{ session['client_won'] }}</li>
+                        <li>Server won: {{ session['server_won'] }}</li>
+                        <li>Ties: {{ session['ties'] }}</li>
+                    </ul>
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                <h6>{{ message }}</h6>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                </div>
+            </div>
+    </div>
+</body>
+</html>
