@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cars And Passengers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body class="bg-dark">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col">
+                <h1>Add Car</h1>
+                <form action="/cars" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="owner">Owner</label>
+                        <select class="form-control" name="owner_id" id="owner">
+                            {% for user in allUsers %}
+                                <option value="{{ user.id }}">{{ user.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary">Add Car</button>
+                    </div>
+                </form>
+                      
+            </div>
+            <div class="col">
+                <h1>All Cars</h1>
+                <p>{{ allCars.count }}</p>
+                <ul>
+                    {% for car in allCars %}
+                        <li>{{ car.name }} has {{ car.passengers.count }} passengers</li>
+                        <ul>
+                            {% for user in car.passengers.all %}
+                                <li>{{ user.name }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Add Passengers</h1>
+                <form action="/passengers" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="user">User</label>
+                        <select class="form-control" name="user_id" id="user">
+                            {% for user in allUsers %}
+                                <option value="{{ user.id }}">{{ user.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="car">Car</label>
+                        <select class="form-control" name="car_id" id="car">
+                            {% for car in allCars %}
+                                <option value="{{ car.id }}">{{ car.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary">Add Passenger</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <h1>All Users</h1>
+                <p>{{ allUsers.count }}</p>
+                <ul>
+                    {% for user in allUsers %}
+                        <li>{{ user.name }}</li>
+                        {% if user.owns.all %}
+                            <ul>
+                                <li>{{ user.name }} owns:</li>
+                                {% for car in user.owns.all %}
+                                    <li>{{ car.name }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
