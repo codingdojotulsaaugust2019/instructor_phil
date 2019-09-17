@@ -30,7 +30,9 @@
                         <button class="btn btn-primary">Add Car</button>
                     </div>
                 </form>
-                      
+                {% for err in messages %}
+                    <p class="text-danger">{{ err }}</p>
+                {% endfor %}
             </div>
             <div class="col">
                 <h1>All Cars</h1>
