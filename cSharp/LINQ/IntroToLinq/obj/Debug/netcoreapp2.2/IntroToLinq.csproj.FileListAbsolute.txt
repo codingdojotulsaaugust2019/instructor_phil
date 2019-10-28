@@ -1,0 +1,11 @@
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/LINQ/IntroToLinq/bin/Debug/netcoreapp2.2/IntroToLinq.deps.json
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/LINQ/IntroToLinq/bin/Debug/netcoreapp2.2/IntroToLinq.runtimeconfig.json
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/LINQ/IntroToLinq/bin/Debug/netcoreapp2.2/IntroToLinq.runtimeconfig.dev.json
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/LINQ/IntroToLinq/bin/Debug/netcoreapp2.2/IntroToLinq.dll
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/LINQ/IntroToLinq/bin/Debug/netcoreapp2.2/IntroToLinq.pdb
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/LINQ/IntroToLinq/obj/Debug/netcoreapp2.2/IntroToLinq.csprojAssemblyReference.cache
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/LINQ/IntroToLinq/obj/Debug/netcoreapp2.2/IntroToLinq.csproj.CoreCompileInputs.cache
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/LINQ/IntroToLinq/obj/Debug/netcoreapp2.2/IntroToLinq.AssemblyInfoInputs.cache
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/LINQ/IntroToLinq/obj/Debug/netcoreapp2.2/IntroToLinq.AssemblyInfo.cs
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/LINQ/IntroToLinq/obj/Debug/netcoreapp2.2/IntroToLinq.dll
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/LINQ/IntroToLinq/obj/Debug/netcoreapp2.2/IntroToLinq.pdb

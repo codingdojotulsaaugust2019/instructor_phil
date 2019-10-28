@@ -1,0 +1,11 @@
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/FirstProject/bin/Debug/netcoreapp2.2/FirstProject.deps.json
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/FirstProject/bin/Debug/netcoreapp2.2/FirstProject.runtimeconfig.json
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/FirstProject/bin/Debug/netcoreapp2.2/FirstProject.runtimeconfig.dev.json
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/FirstProject/bin/Debug/netcoreapp2.2/FirstProject.dll
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/FirstProject/bin/Debug/netcoreapp2.2/FirstProject.pdb
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/FirstProject/obj/Debug/netcoreapp2.2/FirstProject.csprojAssemblyReference.cache
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/FirstProject/obj/Debug/netcoreapp2.2/FirstProject.csproj.CoreCompileInputs.cache
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/FirstProject/obj/Debug/netcoreapp2.2/FirstProject.AssemblyInfoInputs.cache
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/FirstProject/obj/Debug/netcoreapp2.2/FirstProject.AssemblyInfo.cs
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/FirstProject/obj/Debug/netcoreapp2.2/FirstProject.dll
+/Users/pkrull/Documents/codingDojo/cohorts/tulsa_august_2019/cSharp/FirstProject/obj/Debug/netcoreapp2.2/FirstProject.pdb
