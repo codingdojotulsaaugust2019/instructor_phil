@@ -9,6 +9,10 @@
 
 const eeyore = {
   character: "Eeyore",
+  north: undefined,
+  south: undefined,
+  east: undefined,
+  west: undefined,
 }
 const winnie = {
   character: "Winnie the pooh"
