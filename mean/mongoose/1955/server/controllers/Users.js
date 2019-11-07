@@ -50,5 +50,13 @@ module.exports = {
         .then( result => console.log(result) )
         .catch( err => console.log(err))
         .finally(() => res.redirect('/'))
+    },
+    addUser: (req, res) => {
+        console.log(req.body);
+        User.create(req.body)
+        // successful promise
+        .then(addedUser => res.json(addedUser))
+        // unsuccessful promise
+        .catch(err => console.log(err))
     }
 }
