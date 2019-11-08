@@ -10,9 +10,11 @@ export class AppComponent implements OnInit {
   constructor(private _httpService: HttpService){}
   title = 'Phil';
   bBoomer = [];
+  user: any;
 
   ngOnInit(){
     this.getUsersFromService();
+    this.user = {name: ""}
   }
 
   getUsersFromService(){
@@ -20,5 +22,14 @@ export class AppComponent implements OnInit {
       console.log(data);
       this.bBoomer = data['users']
     })
+  }
+  
+  onSubmit(){
+    console.log("in Angular onSubmit", this.user)
+    this._httpService.createUser(this.user).subscribe(data => {
+      console.log(data);
+      this.ngOnInit();
+    })
+    this.user = {name: ""}
   }
 }

@@ -11,4 +11,9 @@ export class HttpService {
     return this._http.get('/users')
   }
 
+  createUser(user){
+    console.log("In the service create user")
+    return this._http.post('/users', user);
+  }
+  
 }
