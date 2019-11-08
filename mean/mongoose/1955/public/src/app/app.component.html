@@ -1,1 +1,11 @@
 <h1>Hello {{ title }}</h1>
+
+<div class="container">
+    <ul *ngIf="bBoomer">
+        <div *ngFor="let user of bBoomer">
+            <li >{{ user.name}}</li>
+            <button>HEYO!</button>
+        </div>
+        
+    </ul>
+</div>

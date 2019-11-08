@@ -6,4 +6,4 @@ module.exports = (app) => {
   app.get('/:name', controller.show);
   app.get('/remove/:name', controller.remove);
   app.post('/users', controller.addUser);
-}
+};
