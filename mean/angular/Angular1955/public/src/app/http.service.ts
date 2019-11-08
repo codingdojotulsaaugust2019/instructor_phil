@@ -10,5 +10,5 @@ export class HttpService {
   getUsers(){
     return this._http.get('/users')
   }
-  
+
 }
