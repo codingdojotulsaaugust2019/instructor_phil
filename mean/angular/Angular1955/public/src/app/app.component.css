@@ -284,3 +284,7 @@
       visibility: hidden;
     }
   }
+
+  .root {
+    border: 1px solid red;
+  }

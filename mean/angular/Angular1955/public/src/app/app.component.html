@@ -1,13 +1,31 @@
 <h1>Hello {{ title }}</h1>
 
-<div class="container">
-    <ul *ngIf="bBoomer">
-        <div *ngFor="let user of bBoomer">
-            <li >{{ user.name}}</li>
-            <button>HEYO!</button>
+<div class="container root">
+    <div class="row">
+        <div class="col-4">
+            <ul *ngIf="bBoomer">
+                <div *ngFor="let user of bBoomer">
+                    <li >{{ user.name}}</li>
+                    <button (click)="editUserForm(user._id)">Update</button>
+                    <button (click)="deleteUser(user._id)">Delete</button>
+                    <button (click)="getUser(user._id)">Show</button>
+                </div>
+            </ul>
         </div>
-        
-    </ul>
+        <div *ngIf="toUpdateUser  && editUser" class="col-4">
+            {{ editUser | json}}
+            <form (submit)="updateUser()">
+                <input [(ngModel)]="editUser.name" type="text" class="form-control" name="name">
+                <button type="submit">Create</button>
+            </form>
+            <div *ngIf="onUpdateErrors">
+                <p class="text-danger" *ngFor="let error of onUpdateErrors">{{ error }}</p>
+            </div>
+        </div>
+        <div class="col-4" *ngIf="parentShowUser">
+            <app-show-user [childShowUser] = "parentShowUser"></app-show-user>
+        </div>
+    </div>
     <div class="container">
         <h3>Add User</h3>
         {{ user | json }}
@@ -15,5 +33,8 @@
             <input [(ngModel)]="user.name" type="text" class="form-control" name="name">
             <button type="submit">Create</button>
         </form>
+        <div *ngIf="onCreateErrors">
+            <p class="text-danger" *ngFor="let error of onCreateErrors">{{ error }}</p>
+        </div>
     </div>
 </div>

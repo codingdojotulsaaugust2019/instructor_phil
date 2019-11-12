@@ -16,4 +16,15 @@ export class HttpService {
     return this._http.post('/users', user);
   }
   
+  getOneUser(userId: String) {
+    return this._http.get(`/users/${userId}`);
+  }
+
+  editUser(user: any) {
+    return this._http.put(`/users/${user._id}`, user);
+  }
+
+  deleteUser(userId: String) {
+    return this._http.delete(`/users/${userId}`);
+  }
 }
